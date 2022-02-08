@@ -8,8 +8,8 @@ declare module 'vue' {
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElPageHeader: typeof import('element-plus/es')['ElPageHeader']
     ElRow: typeof import('element-plus/es')['ElRow']
-    ExampleMarkdown: typeof import('./../src/components/exampleMarkdown.md')['default']
-    GoBackHome: typeof import('./../src/components/GoBackHome.vue')['default']
+    ExampleMarkdown: typeof import('./components/exampleMarkdown.md')['default']
+    GoBackHome: typeof import('./components/GoBackHome.vue')['default']
     IMdiAccountReactivate: typeof import('~icons/mdi/account-reactivate')['default']
   }
 }

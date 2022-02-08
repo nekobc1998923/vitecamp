@@ -17,7 +17,7 @@
       "@/*": ["src/*"],
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","presets/**/*.d.ts",],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   // 编译器默认排除的编译文件
   "exclude": ["node_modules"]
 }

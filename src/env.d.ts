@@ -34,3 +34,7 @@ declare interface ImportMetaEnv {
 declare interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+declare interface Window {
+  // extend the window
+}
