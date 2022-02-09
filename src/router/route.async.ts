@@ -23,7 +23,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
       title: 'markdown示例',
       icon: '',
     },
-    component: () => import('@/views/markdown/index.vue'),
+    component: () => import('@/views/example/MarkdownPage.vue'),
   },
   {
     path: '/icon',
@@ -32,7 +32,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
       title: 'icon示例',
       icon: '',
     },
-    component: () => import('@/views/iconcom/index.vue'),
+    component: () => import('@/views/example/IconPage.vue'),
   },
   {
     path: '/windi',
@@ -41,7 +41,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
       title: 'Windi CSS示例',
       icon: '',
     },
-    component: () => import('@/views/windi/index.vue'),
+    component: () => import('@/views/example/WindiPage.vue'),
   },
   {
     path: '/svg',
@@ -50,7 +50,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
       title: 'svg示例',
       icon: '',
     },
-    component: () => import('@/views/svgcom/index.vue'),
+    component: () => import('@/views/example/SvgPage.vue'),
   },
 ];
 

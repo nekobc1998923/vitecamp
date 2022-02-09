@@ -5,10 +5,12 @@
 declare module 'vue' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElCol: typeof import('element-plus/es')['ElCol']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElPageHeader: typeof import('element-plus/es')['ElPageHeader']
+    ElResult: typeof import('element-plus/es')['ElResult']
     ElRow: typeof import('element-plus/es')['ElRow']
-    ExampleMarkdown: typeof import('./components/exampleMarkdown.md')['default']
+    ExampleMarkdown: typeof import('./components/ExampleMarkdown.md')['default']
     GoBackHome: typeof import('./components/GoBackHome.vue')['default']
     IMdiAccountReactivate: typeof import('~icons/mdi/account-reactivate')['default']
   }
