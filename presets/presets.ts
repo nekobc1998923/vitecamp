@@ -9,6 +9,8 @@ import IconsResolver from 'unplugin-icons/resolver';
 import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 import WindiCSS from 'vite-plugin-windicss';
 import Markdown from 'vite-plugin-md';
+import OptimizationPersist from 'vite-plugin-optimize-persist';
+import PkgConfig from 'vite-plugin-package-config';
 // import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
 
 export default () => {
@@ -50,5 +52,7 @@ export default () => {
     }),
     Markdown(),
     WindiCSS(),
+    PkgConfig(),
+    OptimizationPersist(),
   ];
 };
