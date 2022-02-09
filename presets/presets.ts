@@ -9,7 +9,7 @@ import IconsResolver from 'unplugin-icons/resolver';
 import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 import WindiCSS from 'vite-plugin-windicss';
 import Markdown from 'vite-plugin-md';
-import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
+// import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
 
 export default () => {
   return [
@@ -41,9 +41,9 @@ export default () => {
       dirs: ['src/components/'],
       resolvers: [ElementPlusResolver(), IconsResolver(), VueUseComponentsResolver()],
     }),
-    styleImport({
-      resolves: [ElementPlusResolve()],
-    }),
+    // styleImport({
+    //   resolves: [ElementPlusResolve()],
+    // }),
     Icons({
       compiler: 'vue3',
       autoInstall: true,
