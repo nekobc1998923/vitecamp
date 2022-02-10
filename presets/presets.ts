@@ -10,6 +10,7 @@ import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-comp
 import WindiCSS from 'vite-plugin-windicss';
 import Markdown from 'vite-plugin-md';
 import PkgConfig from 'vite-plugin-package-config';
+import checker from 'vite-plugin-checker';
 // import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
 
 export default () => {
@@ -52,5 +53,15 @@ export default () => {
     Markdown(),
     WindiCSS(),
     PkgConfig(),
+    checker({
+      typescript: true,
+      vueTsc: true,
+      eslint: {
+        lintCommand: 'eslint "./src/**/*.{ts,tsx,vue}"',
+        dev: {
+          logLevel: ['error'],
+        },
+      },
+    }),
   ];
 };
