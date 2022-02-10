@@ -9,9 +9,16 @@ import IconsResolver from 'unplugin-icons/resolver';
 import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 import WindiCSS from 'vite-plugin-windicss';
 import Markdown from 'vite-plugin-md';
+import Prism from 'markdown-it-prism';
 import PkgConfig from 'vite-plugin-package-config';
 import checker from 'vite-plugin-checker';
-// import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
+import ViteFonts from 'vite-plugin-fonts';
+// 重新启用插件 vite-plugin-style-import 的原因见 Issue：https://github.com/antfu/unplugin-vue-components/issues/301
+// 对于 ElMessage 组件的第一次扫描失效，只有手动进入了页面才会加载
+// TODO: 何时问题解决，何时移除插件
+import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
+
+const defaultClasses = 'prose prose-sm m-auto text-left';
 
 export default () => {
   return [
@@ -43,15 +50,29 @@ export default () => {
       dirs: ['src/components/'],
       resolvers: [ElementPlusResolver(), IconsResolver(), VueUseComponentsResolver()],
     }),
-    // styleImport({
-    //   resolves: [ElementPlusResolve()],
-    // }),
+    styleImport({
+      resolves: [ElementPlusResolve()],
+    }),
     Icons({
       compiler: 'vue3',
       autoInstall: true,
     }),
-    Markdown(),
-    WindiCSS(),
+    ViteFonts({
+      google: {
+        families: ['Open Sans', 'Montserrat', 'Fira Sans'],
+      },
+    }),
+    WindiCSS({
+      safelist: defaultClasses,
+    }),
+    Markdown({
+      wrapperClasses: defaultClasses,
+      headEnabled: false,
+      markdownItSetup(md) {
+        // https://prismjs.com/
+        md.use(Prism);
+      },
+    }),
     PkgConfig(),
     checker({
       typescript: true,

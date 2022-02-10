@@ -1,10 +1,6 @@
-### Vue3-ts-template
-
-
+### Vitecamp
 
 这是一个开箱即用的 Vite2 + Vue3 + TypeScript 模板，可以帮助小伙伴们快速建立项目；
-
-
 
 ### 已配置好的开箱即用功能：
 
@@ -24,7 +20,7 @@
 
 还有一些其余的各种功能插件：
 
-- `实现自动按需加载`（**`墙裂推荐`**）：**unplugin-auto-import、unplugin-vue-components、vite-plugin-style-import、unplugin-icons**
+- `实现自动按需加载`（**`墙裂推荐`**）：**unplugin-auto-import、unplugin-vue-components、unplugin-icons**
 - `实现 SVG图标 的组件化`：**vite-svg-loader**
 - `让各种 API 支持响应式`：**VueUse**
 
@@ -33,6 +29,3 @@
 - `支持 markdown`：**vite-plugin-md**
 
 > 上述所有的功能都已经过配置和验证，使用模板之后就可以愉快的撸码了！
-
-
-

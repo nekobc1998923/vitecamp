@@ -4,15 +4,16 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
-    ElCol: typeof import('element-plus/es')['ElCol']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
-    ElPageHeader: typeof import('element-plus/es')['ElPageHeader']
-    ElResult: typeof import('element-plus/es')['ElResult']
-    ElRow: typeof import('element-plus/es')['ElRow']
+    ElTooltip: typeof import('element-plus/es')['ElTooltip']
     ExampleMarkdown: typeof import('./components/ExampleMarkdown.md')['default']
-    GoBackHome: typeof import('./components/GoBackHome.vue')['default']
-    IMdiAccountReactivate: typeof import('~icons/mdi/account-reactivate')['default']
+    IAkarIconsGithubFill: typeof import('~icons/akar-icons/github-fill')['default']
+    IMdiContentDuplicate: typeof import('~icons/mdi/content-duplicate')['default']
+    IMdiHomeSearchOutline: typeof import('~icons/mdi/home-search-outline')['default']
+    IPhCloudMoonBold: typeof import('~icons/ph/cloud-moon-bold')['default']
+    IPhSunHorizonBold: typeof import('~icons/ph/sun-horizon-bold')['default']
+    IRiArticleLine: typeof import('~icons/ri/article-line')['default']
+    TheFooter: typeof import('./components/TheFooter.vue')['default']
   }
 }
 
