@@ -12,10 +12,10 @@ const asyncRoutes: Array<RouteRecordRaw> = [
     component: () => import('@/views/home/index.vue'),
   },
   {
-    path: '/markdown',
-    name: 'markdown',
+    path: '/process',
+    name: 'process',
     meta: {
-      title: 'markdown示例',
+      title: 'Template configuration process',
       icon: '',
     },
     component: () => import('@/views/example/MarkdownPage.vue'),

@@ -137,6 +137,7 @@
     "useFps": true,
     "useFullscreen": true,
     "useGeolocation": true,
+    "useI18n": true,
     "useIdle": true,
     "useInfiniteScroll": true,
     "useIntersectionObserver": true,

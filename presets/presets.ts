@@ -13,7 +13,10 @@ import Prism from 'markdown-it-prism';
 import PkgConfig from 'vite-plugin-package-config';
 import checker from 'vite-plugin-checker';
 import ViteFonts from 'vite-plugin-fonts';
+import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import LinkAttributes from 'markdown-it-link-attributes';
 import { ConfigEnv } from 'vite';
+import { resolve } from 'path';
 // 重新启用插件 vite-plugin-style-import 的原因见 Issue：https://github.com/antfu/unplugin-vue-components/issues/301
 // 对于 ElMessage 组件的第一次扫描失效，只有手动进入了页面才会加载
 // TODO: 何时问题解决，何时移除插件
@@ -33,7 +36,7 @@ export default (env: ConfigEnv) => {
     }),
     AutoImport({
       dts: './src/auto-imports.d.ts',
-      imports: ['vue', 'pinia', 'vue-router', '@vueuse/core'],
+      imports: ['vue', 'pinia', 'vue-router', 'vue-i18n', , '@vueuse/core'],
       // Generate corresponding .eslintrc-auto-import.json file.
       // eslint globals Docs - https://eslint.org/docs/user-guide/configuring/language-options#specifying-globals
       eslintrc: {
@@ -63,6 +66,9 @@ export default (env: ConfigEnv) => {
         families: ['Open Sans', 'Montserrat', 'Fira Sans'],
       },
     }),
+    VueI18n({
+      include: [resolve(__dirname, '../locales/**')],
+    }),
     WindiCSS({
       safelist: defaultClasses,
     }),
@@ -72,6 +78,14 @@ export default (env: ConfigEnv) => {
       markdownItSetup(md) {
         // https://prismjs.com/
         md.use(Prism);
+        // 为 md 中的所有链接设置为 新页面跳转
+        md.use(LinkAttributes, {
+          matcher: (link: string) => /^https?:\/\//.test(link),
+          attrs: {
+            target: '_blank',
+            rel: 'noopener',
+          },
+        });
       },
     }),
     PkgConfig(),

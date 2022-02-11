@@ -16,13 +16,16 @@
     "element-plus": "^2.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.9",
+    "prism-theme-vars": "^0.2.2",
     "vue": "^3.2.25",
+    "vue-i18n": "^9.1.9",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@iconify/json": "^2.0.29",
+    "@intlify/vite-plugin-vue-i18n": "^3.2.2",
     "@types/node": "^17.0.10",
     "@types/nprogress": "^0.2.0",
     "@types/svgo": "^2.6.1",
@@ -39,6 +42,7 @@
     "eslint-plugin-vue": "^8.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
+    "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.2",
     "prettier": "^2.5.1",
     "sass": "^1.49.0",
@@ -54,8 +58,7 @@
     "vite-plugin-style-import": "^1.4.1",
     "vite-plugin-windicss": "^1.6.3",
     "vite-svg-loader": "^3.1.2",
-    "vue-tsc": "^0.29.8",
-    "windicss": "^3.4.3"
+    "vue-tsc": "^0.29.8"
   },
   "lint-staged": {
     "*.{ts,js,vue}": [

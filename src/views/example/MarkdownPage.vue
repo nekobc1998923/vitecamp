@@ -1,7 +1,8 @@
 <template>
-  <ExampleMarkdown></ExampleMarkdown>
+  <EnProcess v-if="locale === 'en'"></EnProcess>
+  <ZhProcess v-else></ZhProcess>
 </template>
 
-<script lang="ts" setup>
-console.log('markdown');
+<script setup lang="ts">
+const { locale } = useI18n();
 </script>

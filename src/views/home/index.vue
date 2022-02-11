@@ -1,13 +1,13 @@
 <template>
-  <div class="container max-w-3xl mx-auto mt-60">
+  <div class="container max-w-3xl mx-auto mt-40">
     <div class="h-60 mb-8">
       <div class="w-52 h-52 mx-auto mb-4"><vitecamp class="w-52 h-52"></vitecamp></div>
     </div>
     <div class="text-center text-md">
-      <h1 class="font-serif font-bold text-4xl mb-8">Hello , welcome to Vitecamp</h1>
+      <h1 class="font-serif font-bold text-4xl mb-8">{{ t('hello') }} , {{ t('welcome to') }} Vitecamp</h1>
       <p class="mb-10">
         <strong>Vitecamp</strong>
-        is a zero-config Vue3 template, it includes these feature:
+        {{ t('includes features') }}
       </p>
       <p class="mb-10">
         <template v-for="(item, index) in featureList" :key="index">
@@ -15,13 +15,15 @@
           <template v-if="!item.isEnd"> | </template>
         </template>
       </p>
-      <div>Before coding , I recommended your IDE setup <strong>VSCode</strong> + <strong>Volar</strong></div>
+      <div>{{ t('before coding') }} , {{ t('setup ide') }} <strong>VSCode</strong> + <strong>Volar</strong></div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import vitecamp from '@/assets/svg/vitecamp.svg?component';
+
+const { t } = useI18n();
 
 const featureList = [
   {
@@ -60,7 +62,10 @@ const featureList = [
     name: 'Axios',
     href: 'https://axios-http.com/',
   },
-
+  {
+    name: 'I18n',
+    href: 'https://github.com/intlify/vite-plugin-vue-i18n',
+  },
   {
     name: 'Prettier',
     href: 'https://github.com/prettier/prettier',
@@ -82,7 +87,7 @@ const featureList = [
     href: 'https://github.com/vueuse/vueuse',
   },
   {
-    name: 'Markdown support',
+    name: 'Markdown',
     href: 'https://github.com/antfu/vite-plugin-md',
   },
   {
