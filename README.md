@@ -1,31 +1,128 @@
-### Vitecamp
+<br>
 
-这是一个开箱即用的 Vite2 + Vue3 + TypeScript 模板，可以帮助小伙伴们快速建立项目；
+<p align='center'>
+<a href="https://vitecamp.netlify.app/">Live Demo</a>
+</p>
 
-### 已配置好的开箱即用功能：
+<br>
 
-- `编程语言`：**TypeScript 4.x 、JavaScript**
-- `前端框架`：**Vue 3.x**
-- `构建工具`：**Vite 2.x**
-- `UI 框架`：**Element Plus**
-- `图标工具`：**icones**
-- `CSS预编译`：**Sass**
-- `CSS框架`：**Windi CSS**
-- `HTTP工具`：**Axios**
+<p align='center'>
+<b>English</b> | <a href="https://github.com/nekobc1998923/vitecamp/blob/master/README.zh-CN.md">简体中文</a>
+</p>
 
-- `路由管理`：**Vue Router 4.x**
-- `状态管理`：**Pinia**
-- `代码规范`：**EditorConifg、Prettier、ESLint、Airbnb JavaScript Style Guide**
-- `提交规范`：**husky、Commitlint 、lint-staged**
+<br>
 
-还有一些其余的各种功能插件：
+## Features
 
-- `实现自动按需加载`（**`墙裂推荐`**）：**unplugin-auto-import、unplugin-vue-components、unplugin-icons**
-- `实现 SVG图标 的组件化`：**vite-svg-loader**
-- `让各种 API 支持响应式`：**VueUse**
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite) - fast !
+- 💪 [Typescript](https://www.typescriptlang.org/) - of course! necessary
+- 🎉 [Element Plus ready](https://github.com/element-plus/element-plus) - UI Library based on Vue.js 3
+- 🔥 [Axios](https://github.com/axios/axios) - Http Library based on Promise
+- 💡 [Vue Router 4](https://router.vuejs.org/zh/) - The official router for Vue.js
+- 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components) - Automatically register components on demand without import
+- 📥 [Auto import APIs](https://github.com/antfu/unplugin-auto-import) - Automatically import APIs
+- 🍍 [State Management via Pinia](https://pinia.esm.dev/) - The Vue Store that you will enjoy using
+- 🎨 [Windi CSS](https://github.com/windicss/windicss) - next generation utility-first CSS framework
+- 😃 [icones](https://github.com/antfu/unplugin-icons) - Powerful Icon Library, Use icons from any icon sets
+- 🌍 [I18n ready](./locales) - Want to translate? Yes, you can!
+- 👩‍🎨 [NProgress](https://github.com/rstacruz/nprogress) - Page loading progress feedback
+- 😃 [SVG Support](https://github.com/jpkleemans/vite-svg-loader) - Support the use of SVG images as components
+- 📑 [Markdown Support](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
+- 🔑 Complete code style specification and code submission specification
+- ☁️ Deploy on Netlify, zero-config
 
-- `让加载页面时有所反馈`：**NProgress**
+## Pre-packed
 
-- `支持 markdown`：**vite-plugin-md**
+### UI Frameworks
 
-> 上述所有的功能都已经过配置和验证，使用模板之后就可以愉快的撸码了！
+- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) - lighter and faster, with a bunch of additional features
+  - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
+- [Element Plus](https://github.com/element-plus/element-plus) - A powerful Vue.js 3 UI Library
+
+### Icons
+
+- [🔍Icônes](https://icones.netlify.app/) - use icons from any icon sets
+  - [unplugin-icons](https://github.com/antfu/unplugin-icons) - Automatically introduce the icons you need on demand
+
+### Plugins
+
+- [Vue Router 4](https://router.vuejs.org/zh/) - The official router for Vue.js
+- [Pinia](https://pinia.esm.dev) - The Vue Store that you will enjoy using
+- [Axios](https://github.com/axios/axios) - Http Library based on Promise
+- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
+- [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Automatically import APIs
+- [vite-plugin-style-import](https://github.com/vbenjs/vite-plugin-style-import) - A plug-in that imports component library styles on demand
+- [vite-plugin-windicss](https://github.com/antfu/vite-plugin-windicss) - Windi CSS Integration
+- [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
+  - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
+  - [prism-theme-vars](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
+  - [markdown-it-link-attributes](https://github.com/crookedneighbor/markdown-it-link-attributes) - Uniformly set the hyperlink jump mode in markdown
+- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
+  - [vite-plugin-vue-i18n](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
+- [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) - Support to throw eslint and TS errors in the browser at runtime
+- [vite-plugin-fonts](https://github.com/stafyniaksacha/vite-plugin-fonts) - Vite's font loader
+- [VueUse](https://github.com/antfu/vueuse) - Collection of useful composition APIs
+- [vite-svg-loader](https://github.com/jpkleemans/vite-svg-loader) - Support the use of SVG images as components
+
+### Coding Style
+
+- [ESLint](https://eslint.org/) with [Airbnb Style](https://github.com/airbnb/javascript)
+
+### Dev tools
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Netlify](https://www.netlify.com/) - zero-config deployment
+- [VS Code Extensions](./.vscode/extensions.json)
+  - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) -Vue 3 IDE support
+  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
+  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
+  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Code quality and rule checking
+  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Focus on code formatting and beautifying code
+  - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - Coding style check
+
+## Try it now!
+
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/nekobc1998923/vitecamp/generate).
+
+### Clone to local
+
+```bash
+git clone https://github.com/nekobc1998923/vitecamp.git my-vitecamp-app
+cd my-vitecamp-app
+npm i
+```
+
+## Checklist
+
+When you use this template, try follow the checklist to update your info properly
+
+- [ ] Change the author name in `LICENSE`
+- [ ] Change the author name in `package.json`
+- [ ] Change the title in `.env`
+- [ ] Change the favicon in `public`
+- [ ] Clean up the `README` and remove routes
+
+And then , you can enjoy coding fun :)
+
+## Usage
+
+### Development
+
+Just run and visit http://localhost:8080
+
+```bash
+npm run dev
+```
+
+### Build
+
+To build the App, run
+
+```bash
+npm run build
+```
+
+And you will see the generated file in `dist` that ready to be served.
