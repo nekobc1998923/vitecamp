@@ -13,6 +13,7 @@ import Prism from 'markdown-it-prism';
 import PkgConfig from 'vite-plugin-package-config';
 import checker from 'vite-plugin-checker';
 import ViteFonts from 'vite-plugin-fonts';
+import { ConfigEnv } from 'vite';
 // 重新启用插件 vite-plugin-style-import 的原因见 Issue：https://github.com/antfu/unplugin-vue-components/issues/301
 // 对于 ElMessage 组件的第一次扫描失效，只有手动进入了页面才会加载
 // TODO: 何时问题解决，何时移除插件
@@ -20,7 +21,7 @@ import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
 
 const defaultClasses = 'prose prose-sm m-auto text-left';
 
-export default () => {
+export default (env: ConfigEnv) => {
   return [
     vue({
       include: [/\.vue$/, /\.md$/],
@@ -74,15 +75,18 @@ export default () => {
       },
     }),
     PkgConfig(),
-    checker({
-      typescript: true,
-      vueTsc: true,
-      eslint: {
-        lintCommand: 'eslint "./src/**/*.{ts,tsx,vue}"',
-        dev: {
-          logLevel: ['error'],
-        },
-      },
-    }),
+    env.mode === 'production'
+      ? null
+      : checker({
+          enableBuild: false,
+          typescript: true,
+          vueTsc: true,
+          eslint: {
+            lintCommand: 'eslint "./src/**/*.{ts,tsx,vue}"',
+            dev: {
+              logLevel: ['error'],
+            },
+          },
+        }),
   ];
 };

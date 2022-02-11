@@ -10,7 +10,7 @@ export default defineConfig((env) => {
   return {
     base: viteEnv.VITE_BASE,
     // 插件
-    plugins: [presets()],
+    plugins: [presets(env)],
     // 别名设置
     resolve: {
       alias: {
