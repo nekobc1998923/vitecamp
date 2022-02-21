@@ -54,6 +54,7 @@
     "vite-plugin-checker": "^0.4.0",
     "vite-plugin-fonts": "^0.2.2",
     "vite-plugin-md": "^0.11.7",
+    "vite-plugin-optimize-persist": "^0.1.2",
     "vite-plugin-package-config": "^0.1.1",
     "vite-plugin-style-import": "^1.4.1",
     "vite-plugin-windicss": "^1.6.3",
@@ -68,6 +69,7 @@
   "vite": {
     "optimizeDeps": {
       "include": [
+        "@vueuse/core",
         "axios",
         "element-plus/es",
         "element-plus/es/components/button/style/css",
@@ -77,10 +79,12 @@
         "element-plus/es/components/page-header/style/css",
         "element-plus/es/components/result/style/css",
         "element-plus/es/components/row/style/css",
+        "element-plus/es/components/tooltip/style/css",
         "element-plus/lib/locale/lang/zh-cn",
         "nprogress",
         "pinia",
         "vue",
+        "vue-i18n",
         "vue-router"
       ]
     }

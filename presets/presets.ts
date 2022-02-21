@@ -10,6 +10,7 @@ import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-comp
 import WindiCSS from 'vite-plugin-windicss';
 import Markdown from 'vite-plugin-md';
 import Prism from 'markdown-it-prism';
+import OptimizationPersist from 'vite-plugin-optimize-persist';
 import PkgConfig from 'vite-plugin-package-config';
 import checker from 'vite-plugin-checker';
 import ViteFonts from 'vite-plugin-fonts';
@@ -89,6 +90,7 @@ export default (env: ConfigEnv) => {
       },
     }),
     PkgConfig(),
+    OptimizationPersist(),
     env.mode === 'production'
       ? null
       : checker({
