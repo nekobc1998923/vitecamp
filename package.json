@@ -51,7 +51,6 @@
     "unplugin-icons": "^0.13.0",
     "unplugin-vue-components": "^0.17.14",
     "vite": "^2.7.2",
-    "vite-plugin-checker": "^0.4.0",
     "vite-plugin-fonts": "^0.2.2",
     "vite-plugin-md": "^0.11.7",
     "vite-plugin-optimize-persist": "^0.1.2",

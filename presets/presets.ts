@@ -12,7 +12,6 @@ import Markdown from 'vite-plugin-md';
 import Prism from 'markdown-it-prism';
 import OptimizationPersist from 'vite-plugin-optimize-persist';
 import PkgConfig from 'vite-plugin-package-config';
-import checker from 'vite-plugin-checker';
 import ViteFonts from 'vite-plugin-fonts';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import LinkAttributes from 'markdown-it-link-attributes';
@@ -84,18 +83,5 @@ export default (env: ConfigEnv) => {
     }),
     PkgConfig(),
     OptimizationPersist(),
-    env.mode === 'production'
-      ? null
-      : checker({
-          enableBuild: false,
-          typescript: true,
-          vueTsc: true,
-          eslint: {
-            lintCommand: 'eslint "./src/**/*.{ts,tsx,vue}"',
-            dev: {
-              logLevel: ['error'],
-            },
-          },
-        }),
   ];
 };
