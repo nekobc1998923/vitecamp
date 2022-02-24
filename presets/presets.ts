@@ -18,10 +18,6 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import LinkAttributes from 'markdown-it-link-attributes';
 import { ConfigEnv } from 'vite';
 import { resolve } from 'path';
-// 重新启用插件 vite-plugin-style-import 的原因见 Issue：https://github.com/antfu/unplugin-vue-components/issues/301
-// 对于 ElMessage 组件的第一次扫描失效，只有手动进入了页面才会加载
-// TODO: 何时问题解决，何时移除插件
-import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import';
 
 const defaultClasses = 'prose prose-sm m-auto text-left';
 
@@ -54,9 +50,6 @@ export default (env: ConfigEnv) => {
       // imports 指定组件所在位置，默认为 src/components; 有需要也可以加上 view 目录
       dirs: ['src/components/'],
       resolvers: [ElementPlusResolver(), IconsResolver(), VueUseComponentsResolver()],
-    }),
-    styleImport({
-      resolves: [ElementPlusResolve()],
     }),
     Icons({
       compiler: 'vue3',
