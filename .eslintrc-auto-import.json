@@ -24,6 +24,8 @@
     "eagerComputed": true,
     "effectScope": true,
     "EffectScope": true,
+    "ElMessage": true,
+    "ElNotification": true,
     "extendRef": true,
     "getActivePinia": true,
     "getCurrentInstance": true,

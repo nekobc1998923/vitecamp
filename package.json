@@ -74,6 +74,7 @@
         "element-plus/es/components/col/style/css",
         "element-plus/es/components/config-provider/style/css",
         "element-plus/es/components/message/style/css",
+        "element-plus/es/components/notification/style/css",
         "element-plus/es/components/page-header/style/css",
         "element-plus/es/components/result/style/css",
         "element-plus/es/components/row/style/css",
