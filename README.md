@@ -61,6 +61,7 @@
 - [vite-plugin-fonts](https://github.com/stafyniaksacha/vite-plugin-fonts) - Vite's font loader
 - [VueUse](https://github.com/antfu/vueuse) - Collection of useful composition APIs
 - [vite-svg-loader](https://github.com/jpkleemans/vite-svg-loader) - Support the use of SVG images as components
+- [vite-plugin-optimize-persist](https://github.com/antfu/vite-plugin-optimize-persist) - Let you can explicitly set the dependencies in vite
 
 ### Coding Style
 
