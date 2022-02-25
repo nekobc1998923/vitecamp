@@ -51,7 +51,6 @@
 - [Axios](https://github.com/axios/axios) - Http Library based on Promise
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Automatically import APIs
-- [vite-plugin-style-import](https://github.com/vbenjs/vite-plugin-style-import) - A plug-in that imports component library styles on demand
 - [vite-plugin-windicss](https://github.com/antfu/vite-plugin-windicss) - Windi CSS Integration
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
   - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
@@ -59,7 +58,6 @@
   - [markdown-it-link-attributes](https://github.com/crookedneighbor/markdown-it-link-attributes) - Uniformly set the hyperlink jump mode in markdown
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
   - [vite-plugin-vue-i18n](https://github.com/intlify/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
-- [vite-plugin-checker](https://github.com/fi3ework/vite-plugin-checker) - Support to throw eslint and TS errors in the browser at runtime
 - [vite-plugin-fonts](https://github.com/stafyniaksacha/vite-plugin-fonts) - Vite's font loader
 - [VueUse](https://github.com/antfu/vueuse) - Collection of useful composition APIs
 - [vite-svg-loader](https://github.com/jpkleemans/vite-svg-loader) - Support the use of SVG images as components
