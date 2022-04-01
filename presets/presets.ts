@@ -10,8 +10,6 @@ import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-comp
 import WindiCSS from 'vite-plugin-windicss';
 import Markdown from 'vite-plugin-md';
 import Prism from 'markdown-it-prism';
-import OptimizationPersist from 'vite-plugin-optimize-persist';
-import PkgConfig from 'vite-plugin-package-config';
 import ViteFonts from 'vite-plugin-fonts';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import LinkAttributes from 'markdown-it-link-attributes';
@@ -81,7 +79,5 @@ export default (env: ConfigEnv) => {
         });
       },
     }),
-    PkgConfig(),
-    OptimizationPersist(),
   ];
 };

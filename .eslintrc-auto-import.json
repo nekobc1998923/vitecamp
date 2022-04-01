@@ -66,6 +66,8 @@
     "reactify": true,
     "reactifyObject": true,
     "reactive": true,
+    "reactiveComputed": true,
+    "reactiveOmit": true,
     "reactivePick": true,
     "readonly": true,
     "ref": true,
