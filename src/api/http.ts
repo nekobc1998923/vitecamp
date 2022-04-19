@@ -1,4 +1,4 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
+import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import showCodeMessage from '@/api/code';
 import { formatJsonToUrlParams, instanceObject } from '@/utils/format';
 
@@ -32,7 +32,7 @@ axiosInstance.interceptors.request.use(
 axiosInstance.interceptors.response.use(
   (response: AxiosResponse) => {
     if (response.status === 200) {
-      return response;
+      return response.data;
     }
     ElMessage.info(JSON.stringify(response.status));
     return response;
@@ -48,17 +48,28 @@ axiosInstance.interceptors.response.use(
   },
 );
 const service = {
-  get: (url: string, data?: object) => axiosInstance.get(url, { params: data }),
-  post: (url: string, data?: object) => axiosInstance.post(url, data),
-  put: (url: string, data?: object) => axiosInstance.put(url, data),
-  delete: (url: string, data?: object) => axiosInstance.delete(url, data),
-  upload: (url: string, file: File) =>
+  get<T = any>(url: string, data?: object): Promise<T> {
+    return axiosInstance.get(url, { params: data });
+  },
+
+  post<T = any>(url: string, data?: object): Promise<T> {
+    return axiosInstance.post(url, data);
+  },
+
+  put<T = any>(url: string, data?: object): Promise<T> {
+    return axiosInstance.put(url, data);
+  },
+
+  delete<T = any>(url: string, data?: object): Promise<T> {
+    return axiosInstance.delete(url, data);
+  },
+
+  upload: (url: string, file: FormData | File) =>
     axiosInstance.post(url, file, {
       headers: { 'Content-Type': 'multipart/form-data' },
     }),
   download: (url: string, data: instanceObject) => {
-    const downloadUrl = `${BASE_PREFIX}/${url}?${formatJsonToUrlParams(data)}`;
-    window.location.href = downloadUrl;
+    window.location.href = `${BASE_PREFIX}/${url}?${formatJsonToUrlParams(data)}`;
   },
 };
 
