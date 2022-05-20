@@ -5,7 +5,7 @@ import presets from './presets/presets';
 // https://vitejs.dev/config/
 export default defineConfig((env) => {
   // env 环境变量
-  const viteEnv = loadEnv(env.mode, `.env.${env.mode}`);
+  const viteEnv = loadEnv(env.mode, process.cwd());
 
   return {
     base: viteEnv.VITE_BASE,
