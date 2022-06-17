@@ -12,6 +12,7 @@ module.exports = {
     window: true,
     defineProps: true,
     defineExpose: true,
+    withDefaults: true,
   },
   extends: [
     './.eslintrc-auto-import.json',
