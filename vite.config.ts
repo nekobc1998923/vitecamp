@@ -38,6 +38,7 @@ export default defineConfig((env) => {
       brotliSize: false,
       // 消除打包大小超过500kb警告
       chunkSizeWarningLimit: 2000,
+      minify: 'terser',
       // 在生产环境移除console.log
       terserOptions: {
         compress: {
