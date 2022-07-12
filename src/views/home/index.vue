@@ -24,7 +24,7 @@
 import vitecamp from '@/assets/svg/vitecamp.svg?component';
 
 const { t } = useI18n();
-ElMessage.info({ message: 'welcome', duration: 1 });
+ElMessage.info({ message: 'welcome', duration: 1000 });
 ElNotification({
   title: 'Issue',
   message: 'If you encounter problems in using the template, please raise them in the issue',
