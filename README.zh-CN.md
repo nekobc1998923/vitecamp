@@ -14,7 +14,7 @@
 
 ## 特性
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite) - 快！
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - 快，且更快！
 - 💪 [Typescript](https://www.typescriptlang.org/) - 当然！必不可少
 - 🎉 [Element Plus 开箱即用](https://github.com/element-plus/element-plus) - 基于 Vue.js 3 的强大 UI 库
 - 🔥 [Axios 配置和封装](https://github.com/axios/axios) - 基于 Promise 的 HTTP 请求库
@@ -52,7 +52,7 @@
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - 自动按需加载组件
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - 自动按需加载 API
 - [vite-plugin-windicss](https://github.com/antfu/vite-plugin-windicss) - Windi CSS 的整合
-- [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown 作为组件，也可以让组件在 Markdown 中使用
+- [vite-plugin-vue-markdown](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown 作为组件，也可以让组件在 Markdown 中使用
   - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) 的语法高亮
   - [prism-theme-vars](https://github.com/antfu/prism-theme-vars) - 利用 CSS 变量自定义 Prism.js 的主题
   - [markdown-it-link-attributes](https://github.com/crookedneighbor/markdown-it-link-attributes) - 统一设置 Markdown 里的超链接跳转方式
@@ -90,7 +90,7 @@
 ```bash
 git clone https://github.com/nekobc1998923/vitecamp.git my-vitecamp-app
 cd my-vitecamp-app
-npm i
+pnpm i
 ```
 
 ## 清单
@@ -112,7 +112,7 @@ npm i
 只需要执行以下命令就可以在 http://localhost:8080 中看到
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### 构建
@@ -120,7 +120,7 @@ npm run dev
 构建该应用只需要执行以下命令
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 然后你会看到用于发布的 `dist` 文件夹被生成。

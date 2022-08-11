@@ -14,7 +14,7 @@
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite) - fast !
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - fast and faster !
 - 💪 [Typescript](https://www.typescriptlang.org/) - of course! necessary
 - 🎉 [Element Plus ready](https://github.com/element-plus/element-plus) - UI Library based on Vue.js 3
 - 🔥 [Axios](https://github.com/axios/axios) - Http Library based on Promise
@@ -52,7 +52,7 @@
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - Automatically import APIs
 - [vite-plugin-windicss](https://github.com/antfu/vite-plugin-windicss) - Windi CSS Integration
-- [vite-plugin-md](https://github.com/antfu/vite-plugin-md) - Markdown as components / components in Markdown
+- [vite-plugin-vue-markdown](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown as components / components in Markdown
   - [markdown-it-prism](https://github.com/jGleitz/markdown-it-prism) - [Prism](https://prismjs.com/) for syntax highlighting
   - [prism-theme-vars](https://github.com/antfu/prism-theme-vars) - customizable Prism.js theme using CSS variables
   - [markdown-it-link-attributes](https://github.com/crookedneighbor/markdown-it-link-attributes) - Uniformly set the hyperlink jump mode in markdown
@@ -90,7 +90,7 @@
 ```bash
 git clone https://github.com/nekobc1998923/vitecamp.git my-vitecamp-app
 cd my-vitecamp-app
-npm i
+pnpm i
 ```
 
 ## Checklist
@@ -112,7 +112,7 @@ And then , you can enjoy coding fun :)
 Just run and visit http://localhost:8080
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Build
@@ -120,7 +120,7 @@ npm run dev
 To build the App, run
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 And you will see the generated file in `dist` that ready to be served.
