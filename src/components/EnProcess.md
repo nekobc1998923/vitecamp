@@ -9,7 +9,7 @@
 ```bash
 git clone https://github.com/nekobc1998923/vitecamp.git my-vitecamp-app
 cd my-vitecamp-app
-npm i
+pnpm i
 ```
 
 ## Checklist
@@ -31,7 +31,7 @@ And then , you can enjoy coding fun :)
 Just run and visit http://localhost:8080
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Build
@@ -39,7 +39,7 @@ npm run dev
 To build the App, run
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 And you will see the generated file in `dist` that ready to be served.

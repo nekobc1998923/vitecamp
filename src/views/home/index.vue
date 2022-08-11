@@ -32,12 +32,12 @@ ElNotification({
 });
 const featureList = [
   {
-    name: 'Vite2',
+    name: 'Vite3',
     href: 'https://github.com/vitejs/vite',
   },
   {
     name: 'Vue3',
-    href: 'https://v3.cn.vuejs.org/',
+    href: 'https://github.com/vuejs/core',
   },
   {
     name: 'TypeScript',
