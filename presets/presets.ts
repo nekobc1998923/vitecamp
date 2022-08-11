@@ -7,7 +7,7 @@ import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 import WindiCSS from 'vite-plugin-windicss';
-import Markdown from 'vite-plugin-md';
+import Markdown from 'vite-plugin-vue-markdown'
 import Prism from 'markdown-it-prism';
 import ViteFonts from 'vite-plugin-fonts';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
