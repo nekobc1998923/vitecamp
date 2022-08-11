@@ -38,14 +38,7 @@ export default defineConfig((env) => {
       reportCompressedSize: false,
       // 消除打包大小超过500kb警告
       chunkSizeWarningLimit: 2000,
-      minify: 'terser',
-      // 在生产环境移除console.log
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true,
-        },
-      },
+      minify: 'esbuild',
       assetsDir: 'static/assets',
       // 静态资源打包到dist下的不同目录
       rollupOptions: {
