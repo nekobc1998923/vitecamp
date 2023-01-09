@@ -79,19 +79,6 @@
   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 专注于代码格式化、美化代码
   - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) - 编码风格检查
 
-## 现在可以试试!
-
-### GitHub 模板
-
-[使用这个模板创建仓库](https://github.com/nekobc1998923/vitecamp/generate).
-
-### 克隆到本地
-
-```bash
-git clone https://github.com/nekobc1998923/vitecamp.git my-vitecamp-app
-cd my-vitecamp-app
-pnpm i
-```
 
 ## 清单
 
