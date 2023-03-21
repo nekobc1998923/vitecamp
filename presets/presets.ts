@@ -26,7 +26,7 @@ export default (env: ConfigEnv) => {
     svgLoader(),
     AutoImport({
       dts: './src/auto-imports.d.ts',
-      imports: ['vue', 'pinia', 'vue-router', 'vue-i18n', , '@vueuse/core'],
+      imports: ['vue', 'pinia', 'vue-router', 'vue-i18n', '@vueuse/core'],
       // Generate corresponding .eslintrc-auto-import.json file.
       // eslint globals Docs - https://eslint.org/docs/user-guide/configuring/language-options#specifying-globals
       eslintrc: {
