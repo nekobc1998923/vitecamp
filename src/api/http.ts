@@ -61,7 +61,7 @@ const service = {
   },
 
   delete<T = any>(url: string, data?: object): Promise<T> {
-    return axiosInstance.delete(url, data);
+    return axiosInstance.delete(url, { data });
   },
 
   upload: (url: string, file: FormData | File) =>
